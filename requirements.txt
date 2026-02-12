@@ -1,2 +1,5 @@
+streamlit==1.32.0
 pandas
+plotly
 streamlit-shadcn-ui
+altair==4.2.2
