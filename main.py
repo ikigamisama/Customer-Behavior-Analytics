@@ -12,7 +12,7 @@ st.markdown(
     <style>
         div[data-testid="stMetric"] {
             border-left: 0.5rem solid #6366f1 !important;
-            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+            box-shadow: 0 0.15rem 1.75rem 0 rgb(123, 55, 133) !important;
             padding: 0 0 0 2% !important;
             border-radius: 12px !important;
             background-color: transparent !important;
