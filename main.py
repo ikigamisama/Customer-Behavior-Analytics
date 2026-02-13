@@ -30,6 +30,7 @@ st.caption("Data-driven insights for smarter decisions")
 
 c = Chart('data/customer_behavior.csv')
 with st.sidebar:
+    st.header("🔍 Filters")
     subscription_status = st.selectbox(
         'Subscription Status:', options=c.subscription_status())
     gender = st.selectbox('Gender:', options=c.gender())
