@@ -106,3 +106,125 @@ with tab1:
     with colB2:
         st.plotly_chart(c.create_customer_by_age_group(
             subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+with tab2:
+    colA1, colA2 = st.columns(2)
+    with colA1:
+        st.plotly_chart(c.create_gender_distribution(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colA2:
+        st.plotly_chart(c.create_customer_count_age_group(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    colB1, colB2 = st.columns(2)
+
+    with colB1:
+        st.plotly_chart(c.create_purchase_by_age_boxplot(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colB2:
+        st.plotly_chart(c.create_previous_purchases_distribution(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_review_rating_distribution(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+with tab3:
+    colA1, colA2 = st.columns(2)
+    with colA1:
+        st.plotly_chart(c.create_top_10_items(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colA2:
+        st.plotly_chart(c.create_top_colors(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+    colB1, colB2 = st.columns(2)
+    with colB1:
+        st.plotly_chart(c.create_category_treemap(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colB2:
+        st.plotly_chart(c.create_avg_rating_by_category(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    colC1, colC2 = st.columns(2)
+
+    with colC1:
+        st.plotly_chart(c.create_category_by_season(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colC2:
+        st.plotly_chart(c.create_size_distribution(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+
+with tab4:
+    colA1, colA2 = st.columns(2)
+    with colA1:
+        st.plotly_chart(c.create_purchase_frequency(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colA2:
+        st.plotly_chart(c.create_payment_methods(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+    colB1, colB2 = st.columns(2)
+    with colB1:
+        st.plotly_chart(c.create_subscription_comparison(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colB2:
+        st.plotly_chart(c.create_discount_impact(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_purchase_frequency_days(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+with tab5:
+    colA1, colA2 = st.columns(2)
+    with colA1:
+        st.plotly_chart(c.create_shipping_distribution(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colA2:
+        st.plotly_chart(c.create_avg_purchase_by_shipping(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+    colB1, colB2 = st.columns(2)
+    with colB1:
+        st.plotly_chart(c.create_shipping_by_category(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with colB2:
+        st.plotly_chart(c.create_subscription_shipping(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+with tab6:
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.plotly_chart(c.create_top_states_revenue(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with col2:
+        st.plotly_chart(c.create_top_states_customers(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    with col3:
+        st.plotly_chart(c.create_avg_purchase_by_state(
+            subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+with tab7:
+    st.plotly_chart(c.create_correlation_heatmap(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_age_vs_purchase(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_previous_vs_current(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_rating_vs_purchase(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
+
+    st.plotly_chart(c.create_age_group_metrics(
+        subscription_status, gender, category, shipping_type, age_group), width='stretch')
